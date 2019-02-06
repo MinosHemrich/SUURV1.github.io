@@ -1683,6 +1683,7 @@ ol {
 .rev_slider_wrapper {
     left: 0px;
     width: 100%;
+    z-index: 1; position:relative;
 }
 .rev_th_auto .rev_slider {
     margin-bottom: 5px !important;
