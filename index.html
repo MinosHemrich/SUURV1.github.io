@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134077348-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-134077348-1');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="text" content="">
@@ -25,49 +16,138 @@
 <link rel="stylesheet" type="text/css" href="style/revolution/revolution-addons/typewriter/css/typewriter.css">
 <link rel="stylesheet" type="text/css" href="style/type/icons.css">
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="style/css/color/blue.css">
+<link rel="stylesheet" type="text/css" href="style/css/color/ice.css">
+<link rel="stylesheet" type="text/css" href="start/hint.min.css">
 <link href='https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i' rel='stylesheet' type='text/css'>
+<style media="screen">
+.bullet-nav {
+	position: fixed;
+	top: 50%;
+	left: auto;
+	right: 20px;
+	transform: translateY(-50%);
+	z-index: 99999;
+	display: none;
+}
+.bullet-nav ul {
+	font-size: 0;
+}
+.bullet-nav .navbar-nav .nav-item {
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin: 5px 0 !important;
+}
+.bullet-nav .navbar-nav .nav-link {
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	background: none;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.bullet-nav .navbar-nav .nav-link:hover, .bullet-nav .navbar-nav .nav-link.active {
+	background: white;
+}
+.meta {
+	color: #eee;
+}
+.cbp-item figure img {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.radi.overlay span.bg, figure.radi, .radi.box {
+	border-radius: 5px !important;
+}
+.navbar.fixed.nav-wrapper-dark {
+	background: rgba(21, 21, 21, 0.7);
+}
+.box.bg-opacity-dark {
+	background: rgba(21, 21, 21, 0.5);
+	transition: all 150ms ease-in-out;
+}
+.box.bg-opacity-dark:hover {
+	background: rgba(21, 21, 21, 0.7);
+}
+.hint--start:after {
+	background-color: #fff;
+	text-shadow: none;
+}
+.hint--start.hint--left:before {
+	border-left-color: #fff;
+}
+.hint--left:before {
+	margin-bottom: -6px;
+}
+.hint--left:after {
+	margin-bottom: -20px
+}
+.hint--left:hover:before {
+	-webkit-transform: translateX(-18px);
+	-moz-transform: translateX(-18px);
+	transform: translateX(-18px);
+}
+.hint--left:hover:after {
+	-webkit-transform: translateX(-18px);
+	-moz-transform: translateX(-18px);
+	transform: translateX(-18px);
+}
+.nav-item.btn-item {
+	margin-top: 6px;
+	margin-left: 20px;
+}
+.navbar.fixed .nav-item.btn-item {
+	margin-top: 13px;
+}
+.btn-s {
+	padding: 14px 22px;
+}
+@media (min-width: 767px) {
+.bullet-nav {
+	display: block;
+}
+}
+#scrollUp .btn {
+	background: #FFF;
+	color: #404040;
+}
+</style>
 </head>
-<body class="onepage" data-spy="scroll" data-target=".navbar">
+<body class="onepage-start" data-spy="scroll" data-target=".bullet-nav">
 <div class="content-wrapper">
-  <nav class="navbar transparent absolute nav-wrapper-dark inverse-text navbar-expand-lg">
+  <nav class="navbar transparent absolute nav-wrapper-dark inverse-text navbar-expand-lg text-uppercase">
     <div class="container">
       <div class="navbar-header">
-        <div class="navbar-brand"><a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a></div>
-        <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button></div> 
+        <div class="navbar-brand"><a href="start.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a></div>
+        <div class="navbar-hamburger ml-auto d-lg-none d-xl-none">z
+          <button class="hamburger animate" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button>
+        </div>
       </div>
       <!-- /.navbar-header -->
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav ml-auto">
-        
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#home">Home</a>
-            <ul class="dropdown-menu dropdown-menu-left">
-              <li class="nav-item"><a class="nav-link scroll" href="#Video">Video</a></li>
-              <li class="nav-item"><a class="nav-link scroll" href="#Photo">Photo</a></li>
-              <li class="nav-item"><a class="nav-link scroll" href="#Adventures">Adventures</a></li>
-              <li class="nav-item"><a class="nav-link scroll" href="#Clients">Clients</a></li>
-              <li class="nav-item"><a class="nav-link scroll" href="#About">About</a></li>
-            </ul>
-          </li>  
-          <li class="nav-item"><a class="nav-link scroll" href="LUTS.html">Free LUTs</a></li>
-          <li class="nav-item"><a class="nav-link scroll" href="Adventures.html">Adventures</a></li>
-          <li class="nav-item"><a class="nav-link scroll" href="Other.html">Other</a></li>
+          <li class="nav-item"><a class="nav-link scroll" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Adventures</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#Contact">Contact</a></li>
-
+          <li class="nav-item"><a class="nav-link" href="StockFootage.html">Free Stock Footage</a></li>
+          <li class="nav-item btn-item d-none d-lg-block"><a class="btn btn-full-rounded btn-white btn-s mb-0" href="LUTS.html" target="_blank">Free LUTs</a></li>
         </ul>
-        <!-- /.navbar-nav -->
-        <div class="navbar-divider"></div>
-        <ul class="social social-mute social-s">
-          <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>
+        <!-- /.navbar-nav --> 
       </div>
       <!-- /.navbar-collapse --> 
     </div>
     <!-- /.container --> 
   </nav>
   <!-- /.navbar -->
+  <div class="bullet-nav">
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link scroll hint--left hint--rounded hint--start" href="#home" aria-label="Home"></a></li>
+      <li class="nav-item"><a class="nav-link scroll hint--left hint--rounded hint--start" href="#Video" aria-label="Video"></a></li>
+      <li class="nav-item"><a class="nav-link scroll hint--left hint--rounded hint--start" href="#Photo" aria-label="Photo"></a></li>
+      <li class="nav-item"><a class="nav-link scroll hint--left hint--rounded hint--start" href="#Adventures" aria-label="Adventures"></a></li>
+    </ul>
+    <!-- /.navbar-nav --> 
+  </div>
+  <!-- /.bullet-nav -->
   <section id="home" class="pt-0 mt-0">
     <div class="dark-wrapper">
       <div class="rev_slider_wrapper fullscreen-container">

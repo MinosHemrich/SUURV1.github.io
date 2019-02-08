@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------
 Theme Name:	Brailie
 Theme URI: 	http://themes.iki-bir.com/brailie
-Version:	1.0.4
+Version:	1.0
 Author:		elemis
 01. RESET
 02. GENERAL
@@ -4758,7 +4758,9 @@ pre {
     background: no-repeat center center;
     background-size: cover;
     position: relative;
-    -webkit-transform: translateZ(0);
+}
+.image-wrapper:not(.box-shadow):not(*:root) {
+    -webkit-transform: translateZ(0)	
 }
 .image-wrapper:not(.mobile) {
     background-attachment: fixed !important
@@ -5708,11 +5710,11 @@ list-blue i {
     .navbar-nav>li>.dropdown-menu {
         border-top: 2px solid #4c86e5;
     }
-    .navbar.center .navbar-brand {
-	    text-align: center;
-    }
     .navbar.center .ml-auto {
         float: right;
+    }
+    .navbar.center .navbar-brand {
+	    text-align: center;
     }
     .navbar.solid:not(.fixed) .navbar-nav .nav-link,
     .navbar.solid:not(.fixed) .navbar-hamburger {
